@@ -19,7 +19,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
    once npm i is completed
 ## Step 6: run the below commands
    ## pm2 start server.js to run the application in fork mode with one process
-   ## pm2 start server.js -i <number of process> for running application in cluster mode with multiple  process(Option to configure           number processes and a shared port number)
+   ## pm2 start server.js -i  <number of process> for running application in cluster mode with multiple  process(Option to configure           number processes and a shared port number)
    ## for Example : pm2 start server.js -i 4
    ## pm2 start server.js --watch (Automatic reload process on exception)
    ## pm2 logs (Centralised log manager with PID’s)
