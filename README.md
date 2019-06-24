@@ -8,17 +8,28 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Please fallow below steps to run the Project
 ## Step 1: 
-   download the project and navigate to project folder 
-
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
+   download the project and navigate to project folder
+## Step 2:
+   create a collection named collections ( mongodb shuold be installed )
+## Step 3:
+   open the command prompt from the folder path and run npm i command ( angular cli should be installed )
+## Step 4:
+   after that run npm install pm2 -g for golbal installation
+## Step 5:
+   once npm i is completed
+## Step 6: run the below commands
+   pm2 start server.js to run the application in fork mode with one process
+   pm2 start server.js -i <number of process> for running application in cluster mode with multiple  process(Option to configure number    processes and a shared port number)
+   for Example : pm2 start server.js -i 4
+   pm2 start server.js --watch (Automatic reload process on exception)
+   pm2 logs (Centralised log manager with PID’s)
+   pm2 monit (Monitoring CPU, Memory usage)
+   pm2 delete 0 for deleting the process with id
+   pm2 show <app-name | id> for more details
+   for example pm2 show 0 
+   pm2 stop 0 to stop process 
+   pm2 restart 0 to reload process
+   
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
